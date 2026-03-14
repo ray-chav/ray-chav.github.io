@@ -1,0 +1,51 @@
+---
+title: "Education & Leadership"
+---
+------------------------------------------------------------------------
+
+## Bachelor's of Science in Statistics and Data Science 
+#### University of Texas at Austin - College of Natural Sciences
+#### August 2024 - May 2028
+
+## Bachelor's of Arts in Philosophy
+#### University of Texas at Austin - College of Liberal Arts
+#### August 2024 - May 2028
+
+GPA: 4.00 / 4.00
+Honors: Distinguished College Scholar (CNS, CoLA)
+
+### Relevant Coursework: 
+#### Linear Algebra; Introductory Data Science; Linear Regression; Probability & Statistical Inference; Data Structures & Algorithms; Elements of Databases; Big Data in Biology
+#### Introductory Symbolic Logic; Intro to Technology Ethics; Language, Politics, and Culture; International Relations; Ethical Theories; Cognitive Science
+
+Skills: Python (Pandas), R (Seurat, tidyverse, ggplot), SQL (MySQL, Postgres), HTML, Google Cloud Console, Excel, Word, Photoshop
+Interests: FILL
+
+------------------------------------------------------------------------
+
+## Leadership Roles
+
+### Women in Data and Statistics
+#### Role: Creative Officer
+[picture here]
+[Text]
+
+### Texas Creative Union Project
+#### Role: Event Coordinator
+[picture here]
+[Text]
+
+### Ignite Texas
+#### Role: Counselor
+[Text]
+
+------------------------------------------------------------------------
+
+## High School Degree
+#### Logos Preparatory Academy
+#### August 2020 - May 2024
+
+GPA: 4.00 / 4.00
+Class Valedictorian
+
+------------------------------------------------------------------------
