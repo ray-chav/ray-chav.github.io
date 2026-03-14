@@ -1,0 +1,17 @@
+name: "my-website"
+output_dir: "."
+
+navbar:
+  title: "My Website"
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Work Experience"
+      href: Work-Experience.html
+    - text: "Education"
+      href: Education.html
+
+output:
+  html_document:
+    theme: flatly
+    toc: true
