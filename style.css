@@ -1,0 +1,359 @@
+/* style document
+
+global variables accessible everywhere in the stylesheet */
+:root {
+
+  /* white bg */
+  --color-bg: #ffffff;
+
+  /* code blocks + tables */
+  --color-bg-alt: #eff1ed;
+
+  /* links, highlights */
+  --color-primary: #717744;
+
+  /* headings */
+  --color-secondary: #373d20;
+
+  /* body text color */
+  --color-text: #1a1a1a;
+
+  --color-muted: #766153;
+
+  /* dividers */
+  --color-border: #bcbd8b;
+
+  /* Default font stack for the website (system fonts load fastest) */
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  /* Font stack used for code blocks */
+  --font-mono: "Fira Code", "JetBrains Mono", monospace;
+
+  /* keep text readable on large screens */
+  --max-width: 1100px;
+
+  --radius: 8px;
+
+  --shadow-soft: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body styling */
+body {
+
+  /* Apply the main font */
+  font-family: var(--font-main);
+
+  /* Default text color */
+  color: var(--color-text);
+
+  /* Page background color */
+  background: var(--color-bg);
+
+  /* Remove default browser margin */
+  margin: 0;
+
+  /* Line spacing for readability */
+  line-height: 1.65;
+}
+
+
+/* centered content */
+
+/* 
+Main container that holds page content.
+Used to keep content centered and prevent it stretching too wide.
+*/
+.main-container {
+
+  /* Maximum width for readability */
+  max-width: var(--max-width);
+
+  /* Centers the container horizontally */
+  margin: auto;
+
+  /* Adds spacing inside the container */
+  padding: 2rem;
+}
+
+
+/* =========================================
+   3. TYPOGRAPHY
+   ========================================= */
+
+/* Styles for headings */
+h1, h2, h3, h4 {
+
+  /* Heading color */
+  color: var(--color-secondary);
+
+  /* Slightly tighter line spacing than body text */
+  line-height: 1.3;
+}
+
+/* Main page titles */
+h1 {
+
+  /* Large font size */
+  font-size: 2.4rem;
+
+  /* Space above heading */
+  margin-top: 2rem;
+}
+
+/* Section headers */
+h2 {
+
+  /* Space above the section */
+  margin-top: 2.5rem;
+
+  /* Decorative line below section titles */
+  border-bottom: 2px solid var(--color-border);
+
+  /* Space between text and the border */
+  padding-bottom: .3rem;
+}
+
+/* Paragraph spacing */
+p {
+
+  /* Adds vertical space between paragraphs */
+  margin: 1rem 0;
+}
+
+/* Default link style */
+a {
+
+  /* Link color */
+  color: var(--color-primary);
+
+  /* Remove default underline */
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+
+  /* Underline appears when user hovers */
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   4. NAVBAR
+   ========================================= */
+
+/* Navigation bar container */
+.navbar {
+
+  /* Thin border under the navbar */
+  border-bottom: 1px solid var(--color-border);
+
+  /* White background */
+  background: white;
+
+  /* Subtle shadow to separate navbar from page */
+  box-shadow: var(--shadow-soft);
+}
+
+/* Website title/logo in navbar */
+.navbar-brand {
+
+  /* Slightly bold text */
+  font-weight: 600;
+}
+
+/* Navbar links */
+.navbar-nav > li > a {
+
+  /* Text color override */
+  color: var(--color-secondary) !important;
+
+  /* Medium weight text */
+  font-weight: 500;
+}
+
+/* Navbar link hover state */
+.navbar-nav > li > a:hover {
+
+  /* Highlight link with primary color */
+  color: var(--color-primary) !important;
+}
+
+
+/* =========================================
+   5. CODE BLOCKS
+   ========================================= */
+
+/* Applies to both inline code and code blocks */
+pre, code {
+
+  /* Use monospace font for code */
+  font-family: var(--font-mono);
+}
+
+/* Multi-line code blocks */
+pre {
+
+  /* Dark background for better contrast */
+  background: #0f172a;
+
+  /* Light text color */
+  color: #e2e8f0;
+
+  /* Padding around code */
+  padding: 1rem;
+
+  /* Rounded corners */
+  border-radius: var(--radius);
+
+  /* Allow horizontal scrolling if code is long */
+  overflow-x: auto;
+}
+
+/* Inline code (inside paragraphs) */
+code {
+
+  /* Light background highlight */
+  background: var(--color-bg-alt);
+
+  /* Small padding around code */
+  padding: 0.2rem 0.35rem;
+
+  /* Slight rounding */
+  border-radius: 4px;
+}
+
+
+/* =========================================
+   6. TABLES
+   ========================================= */
+
+/* Table container styling */
+table {
+
+  /* Full width table */
+  width: 100%;
+
+  /* Merge cell borders together */
+  border-collapse: collapse;
+
+  /* Space above/below table */
+  margin: 1.5rem 0;
+}
+
+/* Table cells */
+th, td {
+
+  /* Border around each cell */
+  border: 1px solid var(--color-border);
+
+  /* Cell padding */
+  padding: 0.6rem;
+}
+
+/* Header row styling */
+th {
+
+  /* Light background for header */
+  background: var(--color-bg-alt);
+
+  /* Left-align header text */
+  text-align: left;
+}
+
+
+/* =========================================
+   7. CARDS / PANELS
+   ========================================= */
+
+/* Reusable container component */
+.card {
+
+  /* White background */
+  background: white;
+
+  /* Rounded corners */
+  border-radius: var(--radius);
+
+  /* Soft shadow to lift card visually */
+  box-shadow: var(--shadow-soft);
+
+  /* Internal spacing */
+  padding: 1.5rem;
+
+  /* Vertical spacing between cards */
+  margin: 1.5rem 0;
+}
+
+
+/* =========================================
+   8. FOOTER
+   ========================================= */
+
+/* Footer section */
+footer {
+
+  /* Large spacing above footer */
+  margin-top: 4rem;
+
+  /* Padding inside footer */
+  padding: 2rem 0;
+
+  /* Top divider line */
+  border-top: 1px solid var(--color-border);
+
+  /* Muted text color */
+  color: var(--color-muted);
+
+  /* Smaller text */
+  font-size: 0.9rem;
+
+  /* Center footer content */
+  text-align: center;
+}
+
+
+/* =========================================
+   9. RESPONSIVE DESIGN
+   ========================================= */
+
+/* Styles applied when screen width is 900px or smaller */
+@media (max-width: 900px) {
+
+  .main-container {
+
+    /* Reduce padding on medium screens */
+    padding: 1.5rem;
+  }
+
+  h1 {
+
+    /* Slightly smaller headings on smaller screens */
+    font-size: 2rem;
+  }
+
+}
+
+/* Styles applied when screen width is 600px or smaller */
+@media (max-width: 600px) {
+
+  .main-container {
+
+    /* Even smaller padding for mobile */
+    padding: 1rem;
+  }
+
+  h1 {
+
+    /* Reduce heading size further for phones */
+    font-size: 1.8rem;
+  }
+
+}

@@ -1,0 +1,33 @@
+---
+title: "Projects"
+---
+
+[image]
+[text]
+
+------------------------------------------------------------------------
+
+## **Homologous Structures of Mouse and Cichlid Brains**
+### February 2026 - Present
+[image]
+[TEXT]
+#### Skills used: R (Seurat), Linux, visualization (UMAP, PCA, t-SNE, heatmaps), academic writing
+
+## **Differential Expression in Cichlid Fish Across Social Environments**
+### August 2025 - December 2025
+[image]
+[TEXT]
+#### Skills used: R (Seurat), Linux, svisualization (2D and 3D), presentation, academic writing
+
+## **Differential Expression in COVID-19 Patients Across Sexes**
+### March 2025 - May 2025
+[image]
+[TEXT]
+#### Skills used: Python (Pandas), Linux, presentation
+
+## **Graduation Rates Analysis Across [FILL]**
+### November 2024 - December 2024
+[TEXT]
+#### Skills used: R (tidyverse, ggplot, Shiny)
+
+------------------------------------------------------------------------

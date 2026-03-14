@@ -2,6 +2,8 @@
 title: "Illustration Portfolio"
 ---
 
+Whenever I find myself outside of the lab or library, I love to In my free time, I manage a small business where I hand-draw illustrations for independent clients, organizations, and merchandise.
+
 [image]
 [text]
 
@@ -16,8 +18,8 @@ title: "Illustration Portfolio"
 ## **Women in Data & Statistics Merch Designer**
 #### Austin, TX
 #### Spring 2026 - Present
+For my role as Creative Officer, I have designed materials using software such as Procreate, Photoshop, and Canva.
 [image]
-[text]
 
 ## **Commissions for Clients**
 #### Remote

@@ -1,20 +1,23 @@
 ---
-title: "Madeline Boss Personal Wesbite"
+title: "Rachel Chavez - Austin, TX"
 #image: "IMG_4535.JPEG"
 links:
   - label: LinkedIn
-    url: "https://www.linkedin.com/in/madeline-r-boss/"
+    url: "https://www.linkedin.com/in/rachel-chavez-03063a3b6/"
   - label: GitHub
-    url: "https://github.com/"
+    url: "https://github.com/ray-chav"
   - label: Email
-    url: "https://github.com/MadelineRBoss"
+    url: "mailto:rcchavez@utexas.edu"
 ---
 
-# ![](IMG_4535.JPEG){#id .class width="40%" height="40%"}
+# ![](ray.jpg){#id .class width="40%" height="40%"}
 
-Madeline Boss is a current undergraduate at UT Austin studying Statistics and Data Science. This website is for employers to learn more about her through her education background, personal projects, and her work experience. Feel free to explore her professional social media as well.
+I'm Rachel Chavez, an undergraduate at the University of Texas at Austin, pursuing degrees in both Statistics and Data Science and Philosophy. 
 
-Here is some links for more information
+I have experience in quantitative research using languages such as Python and R, as well as reading, analyzing, and summarizing literature ranging from scientific journals to dense philosophical essays. I'm deeply interested in how structures such as language, technology, and government influence our ethics, cognition, and decision-making. I enjoy combining statistical modeling and mathematics with challenging analyses of evidence, reasoning, and uncertainty.
 
--   [Linkedin](https://www.linkedin.com/in/madeline-r-boss/)
--   [Github](https://github.com/MadelineRBoss)
+Currently, I'm exploring how empirical evidence can help us understand the cognitive biases that shape beliefs in areas such as policy, counseling, and public discourse.
+
+Thank you! 
+- [Linkedin](https://www.linkedin.com/in/rachel-chavez-03063a3b6/) 
+- [Github](https://github.com/ray-chav)

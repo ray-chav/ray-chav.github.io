@@ -9,11 +9,14 @@ navbar:
     - text: "Work Experience"
       href: Work-Experience.html
     - text: "Education & Leadership"
-      href: Education.html
+      href: Education---Leadership.html
+    - text: "Projects"
+      href: Projects.html
     - text: "Illustration Portfolio"
       href: Illustration-Portfolio.html
 
 output:
   html_document:
     theme: flatly
+    css: style.css
     toc: true

@@ -16,7 +16,7 @@ title: "Work Experience"
 
 ## **Freshman Research Initiative Mentor**
 #### Austin, TX - The University of Texas at Austin
-#### Spring 2026
+#### January 2026 - May 2026
 [image]
 [text]
 
@@ -32,5 +32,13 @@ title: "Work Experience"
 [image]
 [text]
 
+------------------------------------------------------------------------
+
+# Volunteering
+
+## **High School Swim Coaching**
+#### Sugar Land, TX - Logos Preparatory Academy
+#### September 2022 - January 2025
+[text]
 
 ------------------------------------------------------------------------
