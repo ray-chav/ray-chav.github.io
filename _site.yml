@@ -8,8 +8,10 @@ navbar:
       href: index.html
     - text: "Work Experience"
       href: Work-Experience.html
-    - text: "Education"
-      href: Education.html
+    - text: "Education & Leadership"
+      href: Education---Leadership.html
+    - text: "Illustration Portfolio"
+      href: Illustration-Portfolio.html
 
 output:
   html_document:

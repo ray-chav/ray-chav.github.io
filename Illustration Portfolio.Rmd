@@ -1,0 +1,29 @@
+---
+title: "Illustration Portfolio"
+---
+
+[image]
+[text]
+
+------------------------------------------------------------------------
+
+## **On-Campus Business**
+#### Austin, TX
+#### Fall 2024 - Present
+[image]
+[text]
+
+## **Women in Data & Statistics Merch Designer**
+#### Austin, TX
+#### Spring 2026 - Present
+[image]
+[text]
+
+## **Commissions for Clients**
+#### Remote
+#### Fall 2024 - Present
+[image]
+[text]
+
+
+------------------------------------------------------------------------
