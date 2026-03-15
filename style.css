@@ -66,12 +66,11 @@ body {
 }
 
 /* kyoooot border for images */
-.cute-border {
+img.cute-border {
   border: 5px solid #717744;
   border-radius: 15px;
   padding: 10px;
   background-color: white;
-  display: inline-block;
 }
 
 .cute-border img {
@@ -165,9 +164,9 @@ change color*/
 }
 
 /* make navbar current page bold */
-.navbar .nav-link.active {
+.navbar-nav > li.active > a {
   font-weight: bold;
-  color: var(--color-text);
+  color: var(--color-text) !important;
 }
 
 /*code block formatting below
