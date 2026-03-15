@@ -167,6 +167,7 @@ change color*/
 /* make navbar current page bold */
 .navbar .nav-link.active {
   font-weight: bold;
+  color: var(--color-text);
 }
 
 /*code block formatting below
