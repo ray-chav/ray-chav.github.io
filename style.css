@@ -70,6 +70,10 @@ body {
   display: inline-block;
 }
 
+.cute-border img {
+  display: block;
+}
+
 /* heading styling*/
 h1, h2, h3, h4 {
 
@@ -194,42 +198,6 @@ code {
   color: var(--color-text);
 }
 
-/* github-style syntax highlighting */
-.hljs-comment,
-.hljs-quote {
-  color: #94a3b8; /* grey */
-  font-style: italic;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-title,
-.hljs-section,
-.hljs-doctag,
-.hljs-name {
-  color: #f472b6; /* pink */
-}
-
-.hljs-string,
-.hljs-meta .hljs-string {
-  color: #34d399; /* green */
-}
-
-.hljs-number,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #facc15; /* yellow */
-}
-
-.hljs-title.class_,
-.hljs-type {
-  color: #60a5fa; /* blue */
-}
 /* reusable container component */
 .card {
 
@@ -256,11 +224,8 @@ footer {
   /* shrink text but only slightly */
   font-size: 0.5rem;
 
-  /* footer text must be centered*/
-  text-align: center;
-}
-
-footer p{
+  /* footer text is not centered
+  idk how to do that*/
   text-align: center;
 }
 
