@@ -164,9 +164,11 @@ change color*/
 }
 
 /* make navbar current page bold */
-.navbar-nav > li.active > a {
-  font-weight: bold;
-  color: var(--color-text) !important;
+/* active page */
+.navbar-nav .nav-link.active,
+.navbar-nav .active > .nav-link {
+  font-weight: 700 !important;
+  color: var(--color-primary) !important;
 }
 
 /*code block formatting below
