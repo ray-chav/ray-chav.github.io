@@ -61,6 +61,10 @@ body {
   padding: 2rem;
 }
 
+.image-wrapper {
+  text-align: center;
+}
+
 /* kyoooot border for images */
 .cute-border {
   border: 5px solid #717744;
@@ -97,6 +101,7 @@ h2 {
 
   /* Space above the section */
   margin-top: 1.5rem;
+  font-size: 1.5rem;
   /* add border around secnodary headers,
   mind spacing*/
   border-bottom: 2px solid var(--color-border);

@@ -10,7 +10,11 @@ links:
     url: "mailto:rcchavez@utexas.edu"
 ---
 
-<center class="cute-border">![](ray.jpg){#id .class width="40%" height="40%"}</center>
+<div class="image-wrapper">
+  <div class="cute-border">
+    ![](ray.jpg){width="40%" height="40%"}
+  </div>
+</div>
 
 I'm Rachel Chavez, an undergraduate at the University of Texas at Austin, pursuing degrees in both **Statistics & Data Science** and **Philosophy**.
 
