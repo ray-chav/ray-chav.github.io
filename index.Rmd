@@ -12,10 +12,6 @@ links:
 
 ![](ray.jpg){.cute-border width="40%"}
 
-</div>
-
-</div>
-
 I'm Rachel Chavez, an undergraduate at the University of Texas at Austin, pursuing degrees in both **Statistics & Data Science** and **Philosophy**.
 
 I have experience in quantitative research using languages such as Python and R, as well as reading, analyzing, and summarizing literature ranging from scientific journals to dense philosophical essays. I'm deeply interested in how structures such as language, technology, and government influence our ethics, cognition, and decision-making. I enjoy combining statistical modeling and mathematics with challenging analyses of evidence, reasoning, and uncertainty.

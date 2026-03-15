@@ -4,7 +4,7 @@ output_dir: "."
 navbar:
   title: "Rachel Chavez's Portfolio"
   collapse: false
-  left:
+  right:
     - text: "Home"
       href: index.html
     - text: "Work Experience"

@@ -28,7 +28,7 @@ Unsupervised clustering and dimensional analysis were used to identify distinct 
 
 ### August 2025 - December 2025
 
-![](bdib.png){#id .cute_border width="40%" height="40%"}
+![](bdib.png){.cute_border width="40%" height="40%"}
 
 This study, conducted in a laboratory group with four other undergraduate researchers, aimed to identify differential gene expression pathways in the brains of cichlid fish exposed to distinct social stimuli, featuring data from the Hofmann Lab. Two samples of spatial transcriptomics data came from female fish exposed to a rival, two more for separation from offspring, and the final two from introduction of a potential mate. Methods used include unsupervised clustering through UMAPs and t-SNEs, batch correction with Harmony, annotations through scType, and visualization of differential expression through heat maps and dot plots. The study found upregulation of reproductive and stress hormone production in the rival condition and concluded that the rival condition triggered hormones that cause behaviors of higher aggression, increased territory defense, boldness, and increased reproductive readiness.
 

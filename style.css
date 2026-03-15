@@ -71,6 +71,10 @@ img.cute-border {
   border-radius: 15px;
   padding: 10px;
   background-color: white;
+  
+  /* center */
+  display: block;
+  margin: 2rem auto;   /* centers the image */
 }
 
 .cute-border img {
@@ -164,7 +168,8 @@ change color*/
 }
 
 /* make navbar current page bold */
-/* active page */
+/* NOTE: active tag does not work on html; unknown why
+    will fix in a future patch? */
 .navbar-nav .nav-link.active,
 .navbar-nav .active > .nav-link {
   font-weight: 700 !important;
