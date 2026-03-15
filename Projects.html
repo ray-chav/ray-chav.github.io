@@ -253,7 +253,7 @@ $(document).ready(function () {
   <a href="Work-Experience.html">Work Experience</a>
 </li>
 <li>
-  <a href="Education---Leadership.html">Education &amp; Leadership</a>
+  <a href="Education-Leadership.html">Education &amp; Leadership</a>
 </li>
 <li>
   <a href="Projects.html">Projects</a>
@@ -338,8 +338,90 @@ class="section level2">
 Environments</strong></h2>
 <div id="august-2025---december-2025" class="section level3">
 <h3>August 2025 - December 2025</h3>
-<p>[image] [TEXT]</p>
-<pre class="r"><code># my code will go hereree</code></pre>
+<center class="cute-border">
+<img src="bdib.jpg" id="id" class="class"
+style="width:40.0%;height:40.0%" />
+</center>
+<p>[TEXT]</p>
+<details>
+<summary>
+Loading in libraries, data, and GitHub functions
+</summary>
+<pre class="r"><code># load analysis libraries
+lapply(
+  c(&quot;dplyr&quot;,&quot;Seurat&quot;,&quot;HGNChelper&quot;,&quot;openxlsx&quot;,&quot;biomaRt&quot;,&quot;pheatmap&quot;,&quot;ggplot2&quot;),
+  library,
+  character.only = TRUE
+)
+
+# load harmonized spatial transcriptomics dataset
+data &lt;- readRDS(&quot;harmonized_samples.rds&quot;)
+
+# load sctype cell annotation functions
+source(&quot;https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/gene_sets_prepare.R&quot;)
+source(&quot;https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/sctype_score_.R&quot;)</code></pre>
+</details>
+<details>
+<summary>
+Batch Correction and Clustering
+</summary>
+<pre class="r"><code># correct batch effects between samples
+data &lt;- RunHarmony(
+  data,
+  group.by.vars = &quot;Sample&quot;,
+  plot_convergence = TRUE # output convergence plot
+)
+
+# re-cluster after integration
+data &lt;- data %&gt;%
+  FindNeighbors(reduction = &quot;harmony&quot;) %&gt;%
+  FindClusters(resolution = 0.6) %&gt;%
+  RunUMAP(reduction = &quot;harmony&quot;, dims = 1:30)</code></pre>
+</details>
+<details>
+<summary>
+Ortholog Mapping
+</summary>
+<pre class="r"><code># goal: annotate convict cichlid cells
+# problem: no available reference dataset for convict cichlid
+# solution: use scType&#39;s human marker database and map markers to tilapia
+# tilapia is used as an annotated reference species with available ortholog data
+# these mapped markers are then matched to genes present in the convict cichlid dataset
+
+# connect to ensembl tilapia dataset
+ensembl_tilapia &lt;- useEnsembl(
+  biomart = &quot;ensembl&quot;,
+  dataset = &quot;oniloticus_gene_ensembl&quot;
+)
+
+# retrieve ortholog mapping between tilapia and human genes
+# returns ensembl ids, tilapia gene symbols, and associated human genes
+tilapia_orthologs &lt;- getBM(
+  attributes = c(
+    &quot;ensembl_gene_id&quot;,
+    &quot;external_gene_name&quot;,
+    &quot;hsapiens_homolog_associated_gene_name&quot;
+  ),
+  mart = ensembl_tilapia
+)
+
+# build human to tilapia gene mapping table
+human2tilapia &lt;- tilapia_orthologs %&gt;%
+  
+  # remove rows where the tilapia gene name is missing
+  # ensures only valid ortholog mappings remain
+  filter(!is.na(external_gene_name)) %&gt;%
+  
+  # group rows by human gene name
+  # a single human gene can map to multiple tilapia orthologs
+  group_by(hsapiens_homolog_associated_gene_name) %&gt;%
+  
+  # collapse each group into one row
+  # collect all unique tilapia genes corresponding to that human gene
+  summarise(
+    tilapia_genes = list(unique(external_gene_name))
+  )</code></pre>
+</details>
 <div
 id="skills-used-r-seurat-harmony-linux-svisualization-2d-and-3d-presentation-academic-writing"
 class="section level4">
@@ -356,7 +438,7 @@ Sexes</strong></h2>
 <h3>March 2025 - May 2025</h3>
 <p>[image] [TEXT]</p>
 <pre class="python"><code>
-# my code will go hreee
+# i lowkey lost the code that went here lol
 </code></pre>
 <div id="skills-used-python-pandas-linux-presentation"
 class="section level4">

@@ -3,13 +3,14 @@ output_dir: "."
 
 navbar:
   title: "Rachel Chavez's Portfolio"
+  collapse: false
   right:
     - text: "Home"
       href: index.html
     - text: "Work Experience"
       href: Work-Experience.html
     - text: "Education & Leadership"
-      href: Education---Leadership.html
+      href: Education-Leadership.html
     - text: "Projects"
       href: Projects.html
     - text: "Writing"

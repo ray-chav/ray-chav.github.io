@@ -61,6 +61,14 @@ body {
   padding: 2rem;
 }
 
+/* kyoooot border for images */
+.cute-border {
+  border: 5px solid #717744;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: white;
+  display: inline-block;
+}
 
 /* heading styling*/
 h1, h2, h3, h4 {
@@ -147,6 +155,10 @@ change color*/
   color: var(--color-primary) !important;
 }
 
+/* make navbar current page bold */
+.navbar .nav-link.active {
+  font-weight: bold;
+}
 
 /*code block formatting below
 black bg, white text, formatted in code font*/
@@ -157,26 +169,67 @@ pre, code{
 }
 
 /* code blocks */
+/* multi-line code block */
 pre {
-
+  font-family: var(--font-mono);
   background: #0f172a;
   color: #e2e8f0;
-
   padding: 1rem;
   border-radius: var(--radius);
-  /* allow scrollig if code is very long */
   overflow-x: auto;
 }
 
-/* inline code formatting, likely not needed */
-code {
+/* syntax highlight fix 
+oops*/
+pre code {
+  color: inherit !important;
+  background: none !important;
+}
 
-  /* r esque highlight */
+/* inline code */
+code {
   background: var(--color-bg-alt);
   padding: 0.2rem 0.35rem;
   border-radius: 4px;
+  color: var(--color-text);
 }
 
+/* github-style syntax highlighting */
+.hljs-comment,
+.hljs-quote {
+  color: #94a3b8; /* grey */
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-name {
+  color: #f472b6; /* pink */
+}
+
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #34d399; /* green */
+}
+
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #facc15; /* yellow */
+}
+
+.hljs-title.class_,
+.hljs-type {
+  color: #60a5fa; /* blue */
+}
 /* reusable container component */
 .card {
 
@@ -201,12 +254,15 @@ footer {
   color: var(--color-muted);
 
   /* shrink text but only slightly */
-  font-size: 0.9rem;
+  font-size: 0.5rem;
 
   /* footer text must be centered*/
   text-align: center;
 }
 
+footer p{
+  text-align: center;
+}
 
 /* ALL BELOW IS FOR RESPONSIVE DESIGN */
 

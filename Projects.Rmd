@@ -12,7 +12,7 @@ title: "Projects"
 [image]
 [TEXT]
 
-```{r}
+```{r eval=FALSE}
 
 # my code will go hereee
 
@@ -23,15 +23,97 @@ title: "Projects"
 
 ## **Differential Expression in Cichlid Fish Across Social Environments**
 ### August 2025 - December 2025
-[image]
+<center class="cute-border">![](bdib.jpg){#id .class width="40%" height="40%"}</center>
+
 [TEXT]
 
-```{r}
+<details>
+<summary>Loading in libraries, data, and GitHub functions</summary>
+```{r eval=FALSE}
 
-# my code will go hereree
+# load analysis libraries
+lapply(
+  c("dplyr","Seurat","HGNChelper","openxlsx","biomaRt","pheatmap","ggplot2"),
+  library,
+  character.only = TRUE
+)
+
+# load harmonized spatial transcriptomics dataset
+data <- readRDS("harmonized_samples.rds")
+
+# load sctype cell annotation functions
+source("https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/gene_sets_prepare.R")
+source("https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/sctype_score_.R")
 
 ```
+</details>
 
+<details>
+<summary>Batch Correction and Clustering</summary>
+```{r eval=FALSE}
+
+# correct batch effects between samples
+data <- RunHarmony(
+  data,
+  group.by.vars = "Sample",
+  plot_convergence = TRUE # output convergence plot
+)
+
+# re-cluster after integration
+data <- data %>%
+  FindNeighbors(reduction = "harmony") %>%
+  FindClusters(resolution = 0.6) %>%
+  RunUMAP(reduction = "harmony", dims = 1:30)
+
+```
+</details>
+
+<details>
+<summary>Ortholog Mapping</summary>
+```{r eval=FALSE}
+
+# goal: annotate convict cichlid cells
+# problem: no available reference dataset for convict cichlid
+# solution: use scType's human marker database and map markers to tilapia
+# tilapia is used as an annotated reference species with available ortholog data
+# these mapped markers are then matched to genes present in the convict cichlid dataset
+
+# connect to ensembl tilapia dataset
+ensembl_tilapia <- useEnsembl(
+  biomart = "ensembl",
+  dataset = "oniloticus_gene_ensembl"
+)
+
+# retrieve ortholog mapping between tilapia and human genes
+# returns ensembl ids, tilapia gene symbols, and associated human genes
+tilapia_orthologs <- getBM(
+  attributes = c(
+    "ensembl_gene_id",
+    "external_gene_name",
+    "hsapiens_homolog_associated_gene_name"
+  ),
+  mart = ensembl_tilapia
+)
+
+# build human to tilapia gene mapping table
+human2tilapia <- tilapia_orthologs %>%
+  
+  # remove rows where the tilapia gene name is missing
+  # ensures only valid ortholog mappings remain
+  filter(!is.na(external_gene_name)) %>%
+  
+  # group rows by human gene name
+  # a single human gene can map to multiple tilapia orthologs
+  group_by(hsapiens_homolog_associated_gene_name) %>%
+  
+  # collapse each group into one row
+  # collect all unique tilapia genes corresponding to that human gene
+  summarise(
+    tilapia_genes = list(unique(external_gene_name))
+  )
+
+```
+</details>
 
 #### Skills used: R (Seurat, Harmony), Linux, svisualization (2D and 3D), presentation, academic writing
 
@@ -40,9 +122,9 @@ title: "Projects"
 [image]
 [TEXT]
 
-```{python}
+```{python python.reticulate = FALSE}
 
-# my code will go hreee
+# i lowkey lost the code that went here lol
 
 ```
 
