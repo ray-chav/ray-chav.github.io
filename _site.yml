@@ -2,7 +2,7 @@ name: "my-website"
 output_dir: "."
 
 navbar:
-  title: "My Website"
+  title: "Rachel Chavez's Portfolio"
   right:
     - text: "Home"
       href: index.html
@@ -12,6 +12,8 @@ navbar:
       href: Education---Leadership.html
     - text: "Projects"
       href: Projects.html
+    - text: "Writing"
+      href: Writing.html
     - text: "Illustration Portfolio"
       href: Illustration-Portfolio.html
 
@@ -20,3 +22,5 @@ output:
     theme: flatly
     css: style.css
     toc: true
+    includes:
+      after_body: footer.html

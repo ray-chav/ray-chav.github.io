@@ -1,0 +1,5 @@
+---
+output: html_fragment
+---
+
+2026 | [GitHub](https://github.com/ray-chav) | [Email](mailto:rcchavez@utexas.edu) | [LinkedIn](https://www.linkedin.com/in/rachel-chavez-03063a3b6/)

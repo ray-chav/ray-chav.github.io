@@ -7,13 +7,13 @@ editor_options:
 
 ------------------------------------------------------------------------
 
-## Bachelor's of Science in Statistics and Data Science
+## **Bachelor's of Science in Statistics and Data Science**
 
 #### University of Texas at Austin - College of Natural Sciences
 
 #### August 2024 - May 2028
 
-## Bachelor's of Arts in Philosophy
+## **Bachelor's of Arts in Philosophy**
 
 #### University of Texas at Austin - College of Liberal Arts
 
@@ -37,17 +37,14 @@ GPA: 4.00 / 4.00 Honors: Distinguished College Scholar (CNS, CoLA)
 -   Python (Pandas)
 -   R (tidyverse, ggplot, Seurat)
 -   SQL (MySQL, PostgreSQL)
+-   HTML
+-   CSS
 
 #### Technical Tools
 -   Linux/Unix
 -   Google Cloud Console
 -   Excel
 -   Smartsheet
-
-#### Web Building
--   HTML
--   CSS
--   Rmd
 
 #### Other
 -   Photoshop
@@ -69,7 +66,7 @@ GPA: 4.00 / 4.00 Honors: Distinguished College Scholar (CNS, CoLA)
 
 #### Role: Creative Officer
 
-![](wids.jpg){#id .class width="40%" height="40%"} 
+![Photographer: Cammi Tran](wids.jpg){#id .class width="40%" height="40%"} 
 
 Women in Data and Statistics aims to encourage undergraduate women to pursue studies in topics such as data analytics, software engineering, and machine learning. As an officer, I work to organize workshops that range from coding tutorials to elevator pitch practice. 
 
@@ -79,7 +76,7 @@ My role as Creative Offer revolves around promoting the organization to potentia
 
 #### Role: Event Coordinator
 
-![](tcup.jpg){#id .class width="40%" height="40%"} 
+![Photographer: Emily Yao](tcup.jpg){#id .class width="40%" height="40%"} 
 
 Twice a semester, the Texas Creative Union Project(TCUP) hosts student art markets where independent artists can sell hand-drawn and hand-crafted merchandise. As an Event Coordinator, I help organize these markets by verifying artist eligibility, coordinating logistics, and ensuring events run smoothly for both vendors and attendees.
 
