@@ -32,6 +32,20 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var current = window.location.pathname.split("/").pop();
+  if (current === "") current = "index.html";
+
+  var links = document.querySelectorAll(".navbar a");
+
+  links.forEach(function(link) {
+    if (link.getAttribute("href") === current) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -313,7 +327,8 @@ id="toc-november-2024---december-2024">November 2024 - December
 </ul>
 </div>
 
-<p>[image] [text]</p>
+<p>Below is a summary of the major projects I’ve worked on in undergrad,
+primarily including data analysis and visualization using R.</p>
 <hr />
 <div id="homologous-structures-of-mouse-and-cichlid-brains"
 class="section level2">
@@ -354,8 +369,7 @@ class="section level2">
 Environments</strong></h2>
 <div id="august-2025---december-2025" class="section level3">
 <h3>August 2025 - December 2025</h3>
-<p><img src="bdib.png" class="cute_border"
-style="width:40.0%;height:40.0%" /></p>
+<p><img src="bdib.png" class="cute_border" style="width:40.0%" /></p>
 <p>This study, conducted in a laboratory group with four other
 undergraduate researchers, aimed to identify differential gene
 expression pathways in the brains of cichlid fish exposed to distinct

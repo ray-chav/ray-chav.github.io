@@ -1,0 +1,14 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var current = window.location.pathname.split("/").pop();
+  if (current === "") current = "index.html";
+
+  var links = document.querySelectorAll(".navbar a");
+
+  links.forEach(function(link) {
+    if (link.getAttribute("href") === current) {
+      link.parentElement.classList.add("active");
+    }
+  });
+});
+</script>
