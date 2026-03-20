@@ -4,7 +4,7 @@ title: "Illustration Portfolio"
 
 Whenever I find myself outside of the lab or cafés, I love doing digital art. In my free time, I manage a small business where I hand-draw illustrations for independent clients, organizations, and merchandise.
 
-![Shop Banner](banner.png)
+![Shop Banner](banner.PNG)
 
 ------------------------------------------------------------------------
 
@@ -17,7 +17,7 @@ Whenever I find myself outside of the lab or cafés, I love doing digital art. I
 I specialize in selling vibrantly colored art printed on stickers, keychains, and posters. My best-sellers are a line of illustrations of cats with various baked goods. Markets involve sitting at a booth, usually with another student artist, for about five to six hours, chatting with customers, managing money, and answering questions any questions they may have.
 
 ::: {style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;"}
-<img src="market1.jpg" style="height:220px;"/> <img src="kittens.png" style="height:220px;"/> <img src="stickersheet.png" style="height:220px;"/>
+<img src="market1.jpg" style="height:220px;"/> <img src="kittens.PNG" style="height:220px;"/> <img src="stickersheet.PNG" style="height:220px;"/>
 :::
 
 ## **Women in Data & Statistics Merch Designer**
@@ -41,7 +41,7 @@ For my role as Creative Officer, I have designed materials using software such a
 For several years now, I've taken commissions both online and in-person. I've done a variety of work for clients, including designing original characters, building on-model character sheets, or doing full-scale illustrations.
 
 ::: {style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;"}
-<img src="comm.png" style="height:220px;"/>
+<img src="comm.PNG" style="height:220px;"/>
 :::
 
 ## **Personal Art**
@@ -49,7 +49,7 @@ For several years now, I've taken commissions both online and in-person. I've do
 Even between markets and commissions, I enjoy doing original pieces and sharing them with friends. I particularly enjoy designing characters from classic literature and illustrating their scenes. I'm inspired by whimsical, children's book illustrations, and I aim to capture that cute, comforting style in my art, whether it's intensely moody or gentle and cozy.
 
 ::: {style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;"}
-<img src="sunshine.png" style="height:220px;"/> <img src="bar.png" style="height:220px;"/> <img src="car.PNG" style="height:220px;"/> <img src="bedroom.PNG" style="height:220px;"/>
+<img src="sunshine.PNG" style="height:220px;"/> <img src="bar.PNG" style="height:220px;"/> <img src="car.PNG" style="height:220px;"/> <img src="bedroom.PNG" style="height:220px;"/>
 :::
 
 ------------------------------------------------------------------------
